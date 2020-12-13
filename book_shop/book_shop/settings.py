@@ -1,18 +1,17 @@
 from pathlib import Path
-import environ
+from environ import Env
 import os
 
-env = environ.Env(
-    DEBUG=(bool, False)
-)
+env = Env()
+env.read_env()
 
-environ.Env.read_env()
+
+DEBUG = env.bool("DEBUG", default=True)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY')
 
-DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -61,11 +60,11 @@ WSGI_APPLICATION = 'book_shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('PG_DB_NAME'),
-        'USER': env('PG_USER'),
-        'PASSWORD':  env('PG_PASSWORD'),
-        'HOST': env('PG_HOST'),
-        'PORT': env('PG_PORT'),
+        'NAME': env.str('PG_DB_NAME'),
+        'USER': env.str('PG_USER'),
+        'PASSWORD':  env.str('PG_PASSWORD'),
+        'HOST': env.str('PG_HOST'),
+        'PORT': env.int('PG_PORT'),
     }
 }
 
