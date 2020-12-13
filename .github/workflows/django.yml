@@ -35,4 +35,5 @@ jobs:
         PG_HOST: ${{ secrets.PG_HOST }}
         PG_PORT: ${{ secrets.PG_PORT }}
       run: |
-        python book_shop/manage.py test
+        cd book_shop/
+        python manage.py test
