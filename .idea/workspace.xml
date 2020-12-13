@@ -1,77 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/otus_dev_ci.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/book_shop/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/book_shop/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/book_shop/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/book_shop/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/book_shop/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/management/commands/load_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0002_auto_20201129_1618.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0003_auto_20201129_1659.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0004_auto_20201129_1708.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0005_auto_20201205_0929.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0006_book_photo_book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/0007_auto_20201205_1205.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/templates/library/allbook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/templates/library/allbook_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/library/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/190.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/190_8BZoByR.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/190_MdGmczd.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/Yemelyan_Pugachev.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/Yemelyan_Pugachev_4NwhAvS.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/media/book/Yemelyan_Pugachev_t1EryvM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book_shop/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="load project">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/django.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/django.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -197,6 +145,14 @@
       <option name="presentableId" value="Default" />
       <updated>1607857659341</updated>
     </task>
+    <task id="LOCAL-00001" summary="load project">
+      <created>1607858807761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607858807761</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,5 +165,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="load project" />
+    <option name="LAST_COMMIT_MESSAGE" value="load project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1607858867710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607858867710" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607858645133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607858645133" />
   </component>
 </project>
