@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Postgres
-      uses: akanieski/setup-postgres-cli@v1
+      uses: akanieski/setup-postgres-cli@v0.1.2
       with:
         password: ${{ secrets.PG_PASSWORD }}
     - name: Run Tests
