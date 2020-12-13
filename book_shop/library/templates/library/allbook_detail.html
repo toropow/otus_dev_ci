@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Подробнее{% endblock %}
+
+{% block main %}
+
+<div align="center">
+    <h1>{{ book.name_book }}</h1>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ book.image.url }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{ book.name_book }}</h5>
+        <p class="card-text">Отызывы:
+        <ul>
+            {% for rew in book.review.all %}
+            <li>{{ rew.about_book }}</li>
+            {% endfor %}
+        </ul>
+        </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">isbn: {{ book.isbn }}</li>
+        <li class="list-group-item">Год издательства: {{ book.release }}</li>
+        <li class="list-group-item">Издательство: {{ book.publishing_house.name }} ({{ book.publishing_house.address }}) </li>
+    </ul>
+    <div class="card-body">
+        <a href="{% url 'library:index' %}" class="card-link">К книгам</a>
+    </div>
+</div>
+</div>
+
+{% endblock %}

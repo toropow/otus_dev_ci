@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Все книги{% endblock %}
+{% block main %}
+<h1>Наши книги:</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Название книги</th>
+        <th scope="col">Авторы</th>
+        <th scope="col">Обложка</th>
+        <th scope="col">О книге</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for book in all_books %}
+    <tr>
+        <th scope="row">{{ book.name_book }}</th>
+        <td>
+            <ul class="list-group list-group-flush">
+                {% for auth in book.author.all %}
+                <li class="list-group-item">{{ auth.name }}</li>
+                {% endfor %}
+            </ul>
+        </td>
+        <td>
+            {% if book.image %}
+            <img width="150px" src="{{ book.image.url }}">
+            {% endif %}
+        </td>
+        <td>
+            <a href="{% url 'library:book_detail' book.pk %}">Подробнее</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
