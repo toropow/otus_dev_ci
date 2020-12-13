@@ -12,7 +12,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.7]
     steps:
     - uses: actions/checkout@v2
     - name: Set up P  ython ${{ matrix.python-version }}
@@ -28,14 +28,14 @@ jobs:
       with:
         postgresql version: '13'
         postgresql db: ${{ secrets.PG_DB_NAME }}
-        postgresql user: ${{ secrets.PG_USER }}
-        postgresql password: ${{ secrets.PG_PASSWORD }}
+        postgresql user: 'postgres'
+        postgresql password: 'postgres'
     - name: Run Tests
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DEBUG: ${{ secrets.DEBUG }}
-        PG_USER: ${{ secrets.PG_USER }}
-        PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
+        PG_USER: 'postgres'
+        PG_PASSWORD: 'postgres'
         PG_DB_NAME: ${{ secrets.PG_DB_NAME }}
         PG_HOST: '127.0.0.1'
         PG_PORT: 5432
