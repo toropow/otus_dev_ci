@@ -27,7 +27,7 @@ jobs:
       uses: harmon758/postgresql-action@v1
       with:
         postgresql version: '13'
-        postgresql db: ${{ secrets.PG_DB_NAME }}
+        postgresql db: 'demo'
         postgresql user: 'postgres'
         postgresql password: 'postgres'
     - name: Run Tests
@@ -36,7 +36,7 @@ jobs:
         DEBUG: ${{ secrets.DEBUG }}
         PG_USER: 'postgres'
         PG_PASSWORD: 'postgres'
-        PG_DB_NAME: ${{ secrets.PG_DB_NAME }}
+        PG_DB_NAME: 'demo'
         PG_HOST: '127.0.0.1'
         PG_PORT: 5432
       run: |
