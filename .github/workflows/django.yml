@@ -27,7 +27,7 @@ jobs:
       uses: harmon758/postgresql-action@v1
       with:
         postgresql version: '11'
-        postgresql db: ${{ secrets.PG_USER }}
+        postgresql db: ${{ secrets.PG_DB_NAME }}
         postgresql user: ${{ secrets.PG_USER }}
         postgresql password: ${{ secrets.PG_PASSWORD }}
     - name: Run Tests
