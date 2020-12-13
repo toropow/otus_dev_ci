@@ -24,9 +24,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Postgres
-      uses: akanieski/setup-postgres-cli@v0.1.2
+      uses: harmon758/postgresql-action@v1
       with:
-        password: ${{ secrets.PG_PASSWORD }}
+        postgresql version: '11'
+        postgresql db: ${{ secrets.PG_USER }}
+        postgresql user: ${{ secrets.PG_USER }}
+        postgresql password: ${{ secrets.PG_PASSWORD }}
     - name: Run Tests
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
@@ -38,4 +41,6 @@ jobs:
         PG_PORT: ${{ secrets.PG_PORT }}
       run: |
         cd book_shop/
+        python manage.py migrate
+        python manage.py load_data
         python manage.py test
