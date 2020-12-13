@@ -37,8 +37,8 @@ jobs:
         PG_USER: ${{ secrets.PG_USER }}
         PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
         PG_DB_NAME: ${{ secrets.PG_DB_NAME }}
-        PG_HOST: ${{ secrets.PG_HOST }}
-        PG_PORT: ${{ secrets.PG_PORT }}
+        PG_HOST: '127.0.0.1'
+        PG_PORT: 5432
       run: |
         cd book_shop/
         python manage.py migrate
