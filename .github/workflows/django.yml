@@ -27,18 +27,18 @@ jobs:
       uses: harmon758/postgresql-action@v1
       with:
         postgresql version: '13'
-        postgresql db: 'demo'
-        postgresql user: 'postgres'
-        postgresql password: 'postgres'
+        postgresql db: ${{ secrets.PG_DB_NAME }}
+        postgresql user: ${{ secrets.PG_USER }}
+        postgresql password: ${{ secrets.PG_PASSWORD }}
     - name: Run Tests
       env:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DEBUG: ${{ secrets.DEBUG }}
-        PG_USER: 'postgres'
-        PG_PASSWORD: 'postgres'
-        PG_DB_NAME: 'demo'
-        PG_HOST: '127.0.0.1'
-        PG_PORT: 5432
+        PG_USER: ${{ secrets.PG_USER }}
+        PG_PASSWORD: ${{ secrets.PG_PASSWORD }}
+        PG_DB_NAME:  ${{ secrets.PG_DB_NAME }}
+        PG_HOST: ${{ secrets.PG_HOST }}
+        PG_PORT: ${{ secrets.PG_PORT }}
       run: |
         cd book_shop/
         python manage.py migrate
