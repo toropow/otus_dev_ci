@@ -1,6 +1,20 @@
 version: '3.5'
 
 services:
+  app:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - 8000:8000
+    environment:
+      PG_HOST: pg
+    command: >
+      sh -c "python manage.py migrate &&
+            python manage.py load_data &&
+            python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - pg
   pg:
     image: postgres:12
     environment:
@@ -9,7 +23,7 @@ services:
       POSTGRES_DB: demo
       PGDATA: /var/lib/postgresql/data
     volumes:
-    - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
 
