@@ -8,15 +8,15 @@ services:
     ports:
       - 8000:8000
     environment:
-      PG_HOST: pg
-      SECRET_KEY=$SECRET_KEY
-      DEBUG=$DEBUG
-      PG_USER=$PG_USER
-      PG_PASSWORD=$PG_PASSWORD
-      PG_DB_NAME=$PG_DB_NAME
-      PG_HOST=$PG_HOST
-      PG_PORT=$PG_PORT
-      COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN
+      - PG_HOST: pg
+      - SECRET_KEY: $SECRET_KEY
+      - DEBUG: $DEBUG
+      - PG_USER: $PG_USER
+      - PG_PASSWORD: $PG_PASSWORD
+      - PG_DB_NAME: $PG_DB_NAME
+      - PG_HOST: $PG_HOST
+      - PG_PORT: $PG_PORT
+      - COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
     command: >
       sh -c "python manage.py migrate &&
             python manage.py load_data &&
