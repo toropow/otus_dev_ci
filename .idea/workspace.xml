@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="with coveralls">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="remove env pg host">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book_shop/book_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/book_shop/book_shop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +43,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anton\PycharmProjects\otus_dev_ci" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker_example">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="otus_dev_ci" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,6 +81,63 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker_example" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="PG_HOST" />
+                <option name="value" value="pg" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SECRET_KEY" />
+                <option name="value" value="''123'" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="DEBUG" />
+                <option name="value" value="true" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="PG_USER" />
+                <option name="value" value="user" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="PG_PASSWORD" />
+                <option name="value" value="password" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="PG_DB_NAME" />
+                <option name="value" value="demo" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="PG_PORT" />
+                <option name="value" value="5432" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="COVERALLS_REPO_TOKEN" />
+                <option name="value" value="aQYVY11iG7BpRgItY0JTWawOdGdwafDDc" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
@@ -144,6 +204,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yaml.app: Compose Deployment" />
+      <item itemvalue="Docker.docker_example" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker_example" />
+        <item itemvalue="Docker.docker-compose.yaml.app: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -175,7 +245,77 @@
       <option name="project" value="LOCAL" />
       <updated>1608185377439</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="with coveralls + label">
+      <created>1608187767625</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608187767625</updated>
+    </task>
+    <task id="LOCAL-00005" summary="and env variable for coveralls">
+      <created>1608188068839</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608188068839</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add git file">
+      <created>1608189224889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608189224889</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix coveralls">
+      <created>1608192293725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608192293725</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test env variable">
+      <created>1608201348949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608201348949</updated>
+    </task>
+    <task id="LOCAL-00009" summary="remove variable from docker file and into travis side">
+      <created>1608203127305</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608203127305</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add envs in docker-compose.yaml">
+      <created>1608205835314</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608205835314</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add envs in docker-compose.yaml">
+      <created>1608206592926</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608206592926</updated>
+    </task>
+    <task id="LOCAL-00012" summary="remove env pg host">
+      <created>1608207784997</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608207784997</updated>
+    </task>
+    <task id="LOCAL-00013" summary="remove env pg host">
+      <created>1608222105586</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608222105586</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,20 +333,40 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add travis ci" />
     <MESSAGE value="with coveralls" />
-    <option name="LAST_COMMIT_MESSAGE" value="with coveralls" />
+    <MESSAGE value="with coveralls + label" />
+    <MESSAGE value="and env variable for coveralls" />
+    <MESSAGE value="add git file" />
+    <MESSAGE value="fix coveralls" />
+    <MESSAGE value="test env variable" />
+    <MESSAGE value="remove variable from docker file and into travis side" />
+    <MESSAGE value="add envs in docker-compose.yaml" />
+    <MESSAGE value="remove env pg host" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove env pg host" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608139485437">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608234223687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608139485437" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608234223687" />
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608136538230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608136538230" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608185380338">
+    <state x="827" y="269" key="EnvironmentVariablesDialog" timestamp="1608234222884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608185380338" />
+    <state x="827" y="269" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608234222884" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1608188635016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608188635016" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608222107046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608222107046" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1608210611985">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608210611985" />
   </component>
 </project>

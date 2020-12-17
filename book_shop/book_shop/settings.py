@@ -5,6 +5,7 @@ import os
 env = Env()
 env.read_env()
 
+ALLOWED_HOSTS=[]
 
 DEBUG = env.bool("DEBUG", default=True)
 
