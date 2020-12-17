@@ -9,4 +9,4 @@ before_script: pip install docker-compose
 script:
   - docker-compose run app sh -c "coverage run --source='.' manage.py test library"
 after_success:
-  docker-compose run app sh -c "coveralls"
+  - docker-compose run app sh -c "coveralls"
