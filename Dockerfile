@@ -14,6 +14,7 @@ ENV COVERALLS_REPO_TOKEN=aQYVY11iG7BpRgItY0JTWawOdGdwafDDc
 
 COPY requirements.txt ./
 COPY book_shop ./
+COPY .git ./
 
 RUN pip install -r requirements.txt
 
