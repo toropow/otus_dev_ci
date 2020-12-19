@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="remove env pg host">
+    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="add variables as env">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book_shop/book_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/book_shop/book_shop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608222105586</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add variables as env">
+      <created>1608234359796</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608234359796</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,13 +348,14 @@
     <MESSAGE value="remove variable from docker file and into travis side" />
     <MESSAGE value="add envs in docker-compose.yaml" />
     <MESSAGE value="remove env pg host" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove env pg host" />
+    <MESSAGE value="add variables as env" />
+    <option name="LAST_COMMIT_MESSAGE" value="add variables as env" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608234223687">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608386640696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608234223687" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608386640696" />
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608136538230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -360,10 +368,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608188635016" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608222107046">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608234361502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608222107046" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608234361502" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1608210611985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
