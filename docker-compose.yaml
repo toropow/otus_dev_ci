@@ -2,6 +2,7 @@ version: '3.5'
 
 services:
   app:
+    image: lastalex/my-django-app:1.0.0
     build:
       dockerfile: ./Dockerfile
       context: .

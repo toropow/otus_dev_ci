@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="add variables as env">
+    <list default="true" id="2477ded2-6623-4549-bebc-8c4ac8d40689" name="Default Changelist" comment="+ docker registry">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -322,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608234359796</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="+ docker registry">
+      <created>1608388055189</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608388055189</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +357,8 @@
     <MESSAGE value="add envs in docker-compose.yaml" />
     <MESSAGE value="remove env pg host" />
     <MESSAGE value="add variables as env" />
-    <option name="LAST_COMMIT_MESSAGE" value="add variables as env" />
+    <MESSAGE value="+ docker registry" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ docker registry" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608386640696">
@@ -368,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608188635016" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608234361502">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1608395448954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608234361502" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608395448954" />
     <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1608210611985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
