@@ -13,3 +13,4 @@ after_success:
   - echo "$DOCKER_TOKEN" | docker login -u "$DOCKER_LOGIN" --password-stdin
   - docker-compose build app
   - docker-compose push app
+  - curl -XGET http://02e5077303bd.ngrok.io/deploy
